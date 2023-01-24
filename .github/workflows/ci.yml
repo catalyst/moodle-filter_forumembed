@@ -1,0 +1,11 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+  ci:
+    uses: catalyst/catalyst-moodle-workflows/.github/workflows/ci.yml@main
+    with:
+      disable_phpunit: true
+      disable_release: true
+      codechecker_max_warnings: 0

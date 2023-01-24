@@ -1,0 +1,64 @@
+.path-filter-forumembed {
+    font-size: smaller;
+}
+
+.path-filter-forumembed h3 {
+    display: none;
+}
+
+.path-filter-forumembed .post-actions a.btn {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.path-filter-forumembed .post-actions a {
+    display: none;
+}
+
+.path-filter-forumembed .post-actions a[data-post-id],
+.path-filter-forumembed .post-actions a[href*="?edit="] {
+    display: block;
+}
+
+.path-filter-forumembed .discussion-settings-menu {
+    display: none;
+}
+
+.path-filter-forumembed div[data-container="discussion-tools"] {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.path-filter-forumembed .singleselect.d-inline-block {
+    display: none !important;
+}
+
+.path-filter-forumembed header {
+    xmargin-bottom: 0 !important;
+}
+
+.path-filter-forumembed header .mb-3 {
+    margin-bottom: .5rem !important;
+}
+
+.path-filter-forumembed header > div.mr-2 {
+    width: 30px !important;
+}
+
+.path-filter-forumembed .body-content-container .author-groups-container {
+    display: none !important;
+}
+
+.discussion-nav {
+    display: none !important;
+}
+
+.path-filter-forumembed button[data-action="forum-advanced-reply"] {
+    display: none !important;
+}
+
+.path-filter-forumembed div[data-content="inpage-reply-content"] .card-body {
+    border: none;
+    padding: 0
+}
