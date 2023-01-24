@@ -17,7 +17,7 @@
 /**
  * Version information for forum discussion embed.
  *
- * @package     filter_filtercodes
+ * @package     filter_forumembed
  * @author      Alex Morris <alex.morris@catalyst.net.nz>
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

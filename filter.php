@@ -17,13 +17,17 @@
 /**
  * Forum discussion embed filter
  *
+ * @package     filter_forumembed
  * @author      Alex Morris <alex.morris@catalyst.net.nz>
  * @copyright   Catalyst IT
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class filter_forumembed extends moodle_text_filter {
     /**
-     * Function filter replaces any h5p-sources.
+     * Replaces '{discussion:<discussion name>}' tags with a discussion embed.
+     *
+     * @param string $text
+     * @param array $options
      */
     public function filter($text, array $options = array()) {
         global $USER, $CFG, $DB, $COURSE;
