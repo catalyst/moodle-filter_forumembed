@@ -4,9 +4,19 @@
 
 Embed forum discussions anywhere with filter tags.
 
+* [Usage](#usage)
 * [Branches](#branches)
 * [Branches](#branches)
 * [Warm thanks](#warm-thanks)
+
+## Usage
+
+1. Create a discussion thread within a forum in your chosen course.
+2. Add `{discussion:<Your discussion name>}` e.g. `{discussion:Topic #1}` to text anywhere on a course.
+
+When the text is displayed it will be replaced with the discussion thread.
+
+You can use CSS to modify the look and feel of the discussion thread, the embed is surrounded with a div that has the CSS class `path-filter-forumembed`.
 
 ## Branches
 
