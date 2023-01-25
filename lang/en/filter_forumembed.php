@@ -26,4 +26,4 @@
 $string['pluginname'] = 'Forum Embed';
 $string['filtername'] = 'Forum Embed';
 $string['privacy:metadata'] = 'This plugin does not store any personal data.';
-$string['missingdiscussion'] = '<span class="filter-forumembed-error">Sorry, I cannot show anything here. If you are a teacher then add a new discussion topic with subject "{$a}". If you are a student, then contact your teacher.</span>';
+$string['missingdiscussion'] = 'Sorry, I cannot show anything here. If you are a teacher then add a new discussion topic with subject "{$a}". If you are a student, then contact your teacher.';

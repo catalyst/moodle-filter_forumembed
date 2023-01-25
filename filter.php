@@ -45,7 +45,8 @@ class filter_forumembed extends moodle_text_filter {
             $discussionrow = $DB->get_record('forum_discussions', array('name' => $name, 'course' => $COURSE->id));
             if ($discussionrow == null) {
                 return preg_replace('/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
-                    get_string('missingdiscussion', 'filter_forumembed', $name), $text);
+                    '<span class="filter-forumembed-error">' . get_string('missingdiscussion', 'filter_forumembed', $name) .
+                    '</span>', $text);
             }
 
             $vaultfactory = mod_forum\local\container::get_vault_factory();
