@@ -62,3 +62,7 @@
     border: none;
     padding: 0;
 }
+
+.d-flex.flex-column.flex-sm-row.mb-1.hidden {
+    display: none !important;
+}
