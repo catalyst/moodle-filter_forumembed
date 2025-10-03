@@ -35,7 +35,7 @@ class text_filter extends moodle_text_filter {
      * @param string $text
      * @param array $options
      */
-    public function filter($text, array $options = array()) {
+    public function filter($text, array $options = []) {
         global $USER, $CFG, $DB, $COURSE;
 
         if (empty($COURSE->id) || $COURSE->id == 0) {
@@ -48,7 +48,7 @@ class text_filter extends moodle_text_filter {
             $name = $matches[1][0];
             unset($matches);
 
-            $discussionrow = $DB->get_record('forum_discussions', array('name' => $name, 'course' => $COURSE->id));
+            $discussionrow = $DB->get_record('forum_discussions', ['name' => $name, 'course' => $COURSE->id]);
             if ($discussionrow == null) {
                 return preg_replace('/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
                     '<span class="filter-forumembed-error">' . get_string('missingdiscussion', 'filter_forumembed', $name) .
