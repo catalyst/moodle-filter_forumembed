@@ -23,7 +23,7 @@
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Forum Embed';
 $string['filtername'] = 'Forum Embed';
-$string['privacy:metadata'] = 'This plugin does not store any personal data.';
 $string['missingdiscussion'] = 'Sorry, I cannot show anything here. If you are a teacher then add a new discussion topic with subject "{$a}". If you are a student, then contact your teacher.';
+$string['pluginname'] = 'Forum Embed';
+$string['privacy:metadata'] = 'This plugin does not store any personal data.';
