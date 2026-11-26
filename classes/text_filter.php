@@ -50,9 +50,12 @@ class text_filter extends moodle_text_filter {
 
             $discussionrow = $DB->get_record('forum_discussions', ['name' => $name, 'course' => $COURSE->id]);
             if ($discussionrow == null) {
-                return preg_replace('/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
+                return preg_replace(
+                    '/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
                     '<span class="filter-forumembed-error">' . get_string('missingdiscussion', 'filter_forumembed', $name) .
-                    '</span>', $text);
+                    '</span>',
+                    $text
+                );
             }
 
             $vaultfactory = container::get_vault_factory();
@@ -60,8 +63,11 @@ class text_filter extends moodle_text_filter {
             $discussion = $discussionvault->get_from_id($discussionrow->id);
 
             if ($discussion == null) {
-                return preg_replace('/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
-                    get_string('missingdiscussion', 'filter_forumembed', $name), $text);
+                return preg_replace(
+                    '/\{discussion:' . preg_quote($name, '/') . '\}/isuU',
+                    get_string('missingdiscussion', 'filter_forumembed', $name),
+                    $text
+                );
             }
 
             $forumvault = $vaultfactory->get_forum_vault();
