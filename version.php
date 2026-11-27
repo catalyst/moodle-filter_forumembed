@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'filter_forumembed';
-$plugin->version   = 2025100301;
-$plugin->release   = '2025100301';
+$plugin->version   = 2025100302;
+$plugin->release   = '2025100302';
 $plugin->requires  = 2020061513;
 $plugin->maturity  = MATURITY_STABLE;
 $plugin->supported = [39, 405];
